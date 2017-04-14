@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.extractProperty;
 
 /**
  * Created by ramazan on 14.04.2017.
@@ -26,6 +27,8 @@ public class CustomerListTest {
         assertThat(items).extracting("name").contains("veli", "ahmet");
 
         assertThat(items).extracting("name","id").contains(Tuple.tuple("ahmet",1),Tuple.tuple("veli",5));
+
+        assertThat(extractProperty("id",int.class).from(items)).containsExactly(1,2,3,4,5);
     }
 
 
