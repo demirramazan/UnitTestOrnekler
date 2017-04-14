@@ -4,4 +4,5 @@ com\ramazan\ParameterTest2.class
 com\ramazan\JUnitTestLifeCycle.class
 com\ramazan\AssertTest$Dummy.class
 com\ramazan\AssertTest.class
+com\ramazan\CustomerTest.class
 com\ramazan\HesapMakinasiTest.class
